@@ -9,10 +9,10 @@ import { assets } from '../../assets/assets';
 
 const Main = () => {
   const {onSent,recentPrompt,showResult,Loading,resultData,setinput,input} = useContext(Context)
-  const [userName, setUserName] = useState('');
+  const [userName, setUserName] = useState(' ');
 
   useEffect(() => {
-    /*const name = prompt("Enter your name");*/
+    const name = prompt("Enter your name");
     setUserName(name);
   }, []);
 
